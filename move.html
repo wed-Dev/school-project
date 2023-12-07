@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+        }
+        .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: scrollText 10s linear infinite;
+}
+.scrolling {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: scrollText 10s linear infinite;
+}
+@keyframes scrollText {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1 class="scrolling-text">Al-Abbas Higher Secondary School</h1>
+    <h1 class="scrolling">Addmission of fsc start from 19th november</h1>
+</div>
+</body>
+</html>

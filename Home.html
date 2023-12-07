@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="HomeResponsive.css">
+  <link rel="stylesheet" href="Home.css">
+  <title>Al Abbas Higher Secondary School</title>
+  <link rel="shortcut icon" href="School Logo.jpeg" sizes="48x48" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+  <div class="main">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About us</a>
+            <a href="Teachers.html">Faculty</a>
+            <a href="Courses.html">Courses</a>
+            <a href="Events.html">Events</a>
+            <a href="Documents.html">Documents</a>
+        </div>
+      </div>
+      <!-- Main Navbar -->
+    <div class="navbar">
+        <!-- <h1>Kiddos</h1> -->
+        <img src="School Logo.jpeg" alt="">
+        <div>
+          <a href="Home.html">Home</a>
+          <a href="About.html">About us</a>
+          <a href="Teachers.html">Faculty</a>
+          <a href="Courses.html">Courses</a>
+          <a href="Events.html">Events</a>
+          <a href="Documents.html">Documents</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <!-- Afte Navbar -->
+      <div  id='imageContainer' class="visible" style="background-image: url('https://images.unsplash.com/photo-1516383607781-913a19294fd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpbGQlMjBTY2hvb2wlMjBJbWFnZXN8ZW58MHx8MHx8fDA%3D');">
+        <div class="move">
+          <h2 class="scrolling-text">ADDMISSION 0F 9TH AND 10TH START FROM 10 NOVEMBER AND 11TH,12TH START FROM 20 November</h2>
+        </div>
+    <h1><span>AL ABBAS</span> HIGHER SECONDARY SCHOOL</h1>
+<button><a href="Admission.html">ADDMISION</a></button>
+
+</div>
+<!-- footer -->
+<footer>
+  <div class="contact">
+    <h1>Have a Questions?</h1>
+    <h3><span><i class="ri-map-pin-line"></i></span>203 Fake St. Mountain View, San Francisco, California, USA</h3>
+    <h3><span><i class="ri-phone-line"></i></span>030000000000</h3>
+    <h3><span><i class="ri-mail-line"></i></span>@gmail.com</h3>
+  </div>
+  <div class="connect">
+    <h1>Connect With Us</h1>
+    <div class="options">
+      <a href=""><i class="ri-facebook-fill"></i></a>
+      <a href=""><i class="ri-whatsapp-fill"></i></a>
+      <a href=""><i class="ri-twitter-line"></i></a>
+    </div>
+  </div>
+  <div class="developer">
+    <h1>Developed by Muhammad Ehtisham Ul Islam && Muhammad Mudassir</h1>
+    <h2>Contact us:</h2>
+    <h3><span><i class="ri-phone-line"></i></span>030000000000</h3>
+    <h3><span><i class="ri-phone-line"></i></span>030000000000</h3>
+  </div>
+</footer>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.height= "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+document.addEventListener("DOMContentLoaded", function () {
+        const container = document.getElementById("imageContainer");
+        const images = ['https://images.unsplash.com/photo-1516383607781-913a19294fd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpbGQlMjBTY2hvb2wlMjBJbWFnZXN8ZW58MHx8MHx8fDA%3D', 'https://images.unsplash.com/photo-1699256239941-0b7222476c71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8', 'https://plus.unsplash.com/premium_photo-1699577272317-a64e1eaaa9c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D'];
+        let currentIndex = 0;
+        function rotateImages() {
+            currentIndex = (currentIndex + 1) % images.length;
+            container.style.backgroundImage = `url('${images[currentIndex]}')`;
+        }
+        setInterval(rotateImages, 6000);
+    });
+    </script>
+</body>
+</html>

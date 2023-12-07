@@ -1,0 +1,42 @@
+@media(max-width:1000px){
+
+    .navbar span{
+        opacity:1;
+    }
+    .navbar a {
+       opacity:0;
+      }
+      #imageContainer h1{
+        font-size:20px;
+        color:white;
+        margin-left:10px;
+    }
+   /* Scrolling text */
+   .move {
+    width:90%;
+    left:5px;
+  }
+  .scrolling-text{
+    overflow:hidden;
+    animation-duration: 15s;
+  }
+  .scrolling-text {
+    font-size: 14px; 
+  }
+    .contact h1{
+        font-size:30px;
+    }
+    .contact h3{
+        font-size:16px;
+        padding:5px 0px;
+    }
+    .connect{
+        margin-top:30px;
+    }
+    .developer h1{
+        font-size:15px;
+    }
+    .developer{
+        margin-top:60px;
+    }
+}
